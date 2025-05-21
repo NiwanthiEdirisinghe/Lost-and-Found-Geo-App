@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0E0E0"
+    tools:context=".ItemListActivity">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_arrow_back"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/tvListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOST &amp; FOUND ITEMS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#3F51B5"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvListTitle" />
+
+    <TextView
+        android:id="@+id/tvNoItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No items found"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

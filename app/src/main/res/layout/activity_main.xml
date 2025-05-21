@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E0E0E0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Lost &amp; Found App"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Connect lost items to their owners"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnCreateAdvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSubtitle"
+        android:layout_marginTop="232dp"
+        android:backgroundTint="#3F51B5"
+        android:padding="12dp"
+        android:text="CREATE A NEW ADVERT" />
+
+    <Button
+        android:id="@+id/btnShowItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCreateAdvert"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3F51B5"
+        android:padding="12dp"
+        android:text="SHOW ALL LOST &amp; FOUND ITEMS" />
+
+    <Button
+        android:id="@+id/btnShowOnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnShowItems"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#3F51B5"
+        android:padding="12dp"
+        android:text="SHOW ITEMS ON MAP"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
